@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Main-Class: me.jamboxman5.boateco.BoatEcoApplication
+Class-Path: jakarta.persistence-api-3.1.0.jar jackson-module-parameter-n
+ ames-2.18.3.jar lang-tag-1.7.jar micrometer-commons-1.14.5.jar jackson-
+ datatype-jdk8-2.18.3.jar spring-tx-6.2.5.jar nimbus-jose-jwt-9.37.3.jar
+  txw2-4.0.5.jar slf4j-api-2.0.17.jar log4j-api-2.24.3.jar spring-boot-s
+ tarter-jdbc-3.4.4.jar jjwt-jackson-0.11.5.jar spring-boot-starter-secur
+ ity-3.4.4.jar jackson-databind-2.18.3.jar byte-buddy-1.15.11.jar spring
+ -context-6.2.5.jar spring-boot-autoconfigure-3.4.4.jar spring-boot-star
+ ter-tomcat-3.4.4.jar spring-core-6.2.5.jar jaxb-core-4.0.5.jar thymelea
+ f-3.1.3.RELEASE.jar oauth2-oidc-sdk-9.43.6.jar spring-boot-starter-json
+ -3.4.4.jar h2-2.1.214.jar spring-boot-starter-3.4.4.jar tomcat-embed-co
+ re-10.1.39.jar jakarta.transaction-api-2.0.1.jar snakeyaml-2.3.jar logb
+ ack-core-1.5.18.jar spring-boot-starter-web-3.4.4.jar jul-to-slf4j-2.0.
+ 17.jar spring-boot-devtools-3.4.4.jar tomcat-embed-el-10.1.39.jar logba
+ ck-classic-1.5.18.jar jdbi3-core-3.38.0.jar spring-security-config-6.4.
+ 4.jar spring-security-oauth2-jose-6.4.4.jar json-smart-2.5.2.jar spring
+ -session-core-3.4.2.jar spring-data-jpa-3.4.4.jar content-type-2.2.jar 
+ HikariCP-5.1.0.jar spring-security-oauth2-client-6.4.4.jar spring-beans
+ -6.2.5.jar spring-aop-6.2.5.jar jakarta.mail-api-2.1.3.jar jandex-3.2.0
+ .jar angus-activation-2.0.2.jar unbescape-1.1.6.RELEASE.jar hibernate-c
+ ore-6.6.11.Final.jar jdbi3-sqlobject-3.38.0.jar jackson-datatype-jsr310
+ -2.18.3.jar spring-boot-3.4.4.jar geantyref-1.3.14.jar jcip-annotations
+ -1.0-1.jar asm-9.7.1.jar spring-boot-starter-oauth2-client-3.4.4.jar jd
+ bi3-spring5-3.38.0.jar spring-data-commons-3.4.4.jar spring-boot-starte
+ r-data-jpa-3.4.4.jar jjwt-api-0.11.5.jar jakarta.annotation-api-2.1.1.j
+ ar spring-jdbc-6.2.5.jar hibernate-commons-annotations-7.0.3.Final.jar 
+ jjwt-impl-0.11.5.jar thymeleaf-spring6-3.1.3.RELEASE.jar spring-securit
+ y-crypto-6.4.4.jar jaxb-runtime-4.0.5.jar aspectjweaver-1.9.23.jar clas
+ smate-1.7.0.jar jakarta.xml.bind-api-4.0.2.jar postgresql-42.7.5.jar sp
+ ring-security-oauth2-core-6.4.4.jar checker-qual-3.48.3.jar spring-aspe
+ cts-6.2.5.jar istack-commons-runtime-4.1.2.jar thymeleaf-extras-springs
+ ecurity6-3.1.1.RELEASE.jar spring-security-core-6.4.4.jar spring-web-6.
+ 2.5.jar jboss-logging-3.6.1.Final.jar jackson-core-2.18.3.jar spring-bo
+ ot-starter-thymeleaf-3.4.4.jar spring-webmvc-6.2.5.jar spring-orm-6.2.5
+ .jar antlr4-runtime-4.13.0.jar spring-security-web-6.4.4.jar log4j-to-s
+ lf4j-2.24.3.jar jakarta.activation-api-2.1.3.jar accessors-smart-2.5.2.
+ jar jackson-annotations-2.18.3.jar jakarta.inject-api-2.0.1.jar spring-
+ expression-6.2.5.jar micrometer-observation-1.14.5.jar attoparser-2.0.7
+ .RELEASE.jar spring-jcl-6.2.5.jar spring-boot-starter-logging-3.4.4.jar
+  tomcat-embed-websocket-10.1.39.jar angus-mail-2.0.1.jar
+
