@@ -50,5 +50,16 @@ public interface EntryDAO {
             @Bind("cost") double cost,
             @Bind("plate") String plate);
 
+    @SqlUpdate("delete from gasEntries where " +
+            "month = :month and " +
+            "day = :day and " +
+            "year = :year and " +
+            "plate = :plate")
+    void delete(
+            @Bind("month") int month,
+            @Bind("day") int day,
+            @Bind("year") int year,
+            @Bind("plate") String plate);
+
 
 }

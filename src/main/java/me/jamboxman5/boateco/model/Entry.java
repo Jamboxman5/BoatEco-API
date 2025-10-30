@@ -42,6 +42,8 @@ public class Entry {
 
 
     public void updateEntry(EntryDAO entryDAO) {
+        entryDAO.delete(month, day, year, plate);
+        entryDAO.add(month, day, year, miles, gallons, cost, plate);
     }
 }
 
