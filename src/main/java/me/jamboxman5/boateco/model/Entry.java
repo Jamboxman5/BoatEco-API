@@ -1,5 +1,7 @@
 package me.jamboxman5.boateco.model;
 
+import me.jamboxman5.boateco.dao.EntryDAO;
+
 public class Entry {
 
     String plate;
@@ -39,6 +41,8 @@ public class Entry {
     public void setCost(double cost) { this.cost = cost; }
 
 
+    public void updateEntry(EntryDAO entryDAO) {
+    }
 }
 
 

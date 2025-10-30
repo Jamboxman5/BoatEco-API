@@ -64,6 +64,15 @@ public class EntryController {
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(entry.getPlate())));
     }
+
+    @PutMapping("/edit")
+    public ResponseEntity<String> updateEntry(@RequestBody Entry entry) throws JsonProcessingException {
+
+        entry.updateEntry(entryDAO);
+
+        ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
+        return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(entry.getPlate())));
+    }
 }
 
 
