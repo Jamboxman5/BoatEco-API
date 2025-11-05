@@ -8,6 +8,7 @@ import org.jdbi.v3.sqlobject.statement.SqlUpdate;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.UUID;
 
 @Component
 public interface EntryDAO {
@@ -34,21 +35,9 @@ public interface EntryDAO {
             @Bind("plate") String plate);
 
     @SqlUpdate("delete from gasEntries where " +
-            "month = :month and " +
-            "day = :day and " +
-            "year = :year and " +
-            "miles = :miles and " +
-            "gallons = :gallons and " +
-            "cost = :cost and " +
-            "plate = :plate")
+            "id = :id")
     void delete(
-            @Bind("month") int month,
-            @Bind("day") int day,
-            @Bind("year") int year,
-            @Bind("miles") int miles,
-            @Bind("gallons") double gallons,
-            @Bind("cost") double cost,
-            @Bind("plate") String plate);
+            @Bind("id") UUID id);
 
     @SqlUpdate("delete from gasEntries where " +
             "month = :month and " +

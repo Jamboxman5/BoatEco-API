@@ -51,15 +51,7 @@ public class EntryController {
     @DeleteMapping("/delete")
     public ResponseEntity<String> deleteEntry(@RequestBody Entry entry) throws JsonProcessingException {
 
-        entryDAO.delete(
-                entry.getMonth(),
-                entry.getDay(),
-                entry.getYear(),
-                entry.getMiles(),
-                entry.getGallons(),
-                entry.getCost(),
-                entry.getPlate()
-        );
+        entryDAO.delete(entry.getId());
 
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
         return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(entry.getPlate())));
