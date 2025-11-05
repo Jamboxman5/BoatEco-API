@@ -16,7 +16,7 @@ public interface EntryDAO {
     @RegisterBeanMapper(Entry.class)
     List<Entry> findByPlate(@Bind("plate") String plate);
 
-    @SqlUpdate("insert into gasEntries values (" +
+    @SqlUpdate("INSERT INTO gasEntries (month, day, year, miles, gallons, cost, plate) VALUES (" +
             ":month, " +
             ":day, " +
             ":year, " +

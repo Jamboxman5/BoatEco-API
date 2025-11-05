@@ -2,6 +2,8 @@ package me.jamboxman5.boateco.model;
 
 import me.jamboxman5.boateco.dao.EntryDAO;
 
+import java.util.UUID;
+
 public class Entry {
 
     String plate;
@@ -11,10 +13,15 @@ public class Entry {
     int miles;
     double gallons;
     double cost;
+    UUID id;
 
     public String getPlate() { return plate; }
 
     public void setPlate(String plate) {  this.plate = plate; }
+
+    public UUID getId() { return id; }
+
+    public void setId(UUID id) {  this.id = id; }
 
     public int getMonth() { return month; }
 
