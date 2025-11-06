@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/entry")
@@ -48,13 +49,13 @@ public class EntryController {
         return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(entry.getPlate())));
     }
 
-    @DeleteMapping("/delete")
-    public ResponseEntity<String> deleteEntry(@RequestBody Entry entry) throws JsonProcessingException {
+    @DeleteMapping("/delete/{plate}/{id}")
+    public ResponseEntity<String> deleteEntry(@PathVariable("plate") String plate, @PathVariable("id") String id) throws JsonProcessingException {
 
-        entryDAO.delete(entry.getId());
+        entryDAO.delete(UUID.fromString(id));
 
         ObjectWriter ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
-        return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(entry.getPlate())));
+        return ResponseEntity.ok(ow.writeValueAsString(entryDAO.findByPlate(plate)));
     }
 
     @PutMapping("/edit")
